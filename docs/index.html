@@ -15,7 +15,7 @@
     <h1>Title</h1>
     <li><a href="/pages/page">Сокращенная ссылка на внутреннюю</a></li>
     <li><a href="/">Сокращенная ссылка на главную</a></li>
-    <li><a href="http://github.com?parameter1=p1&amp;parameter2=2&amp;parameter3=p3">Ссылка с тремя параметрами URL</a></li>
+    <li><a href="http://github.com?parameter1=p1&arameter2=2&parameter3=p3">Ссылка с тремя параметрами URL</a></li>
     <li><a href="http://github.com?id=1003930">Ссылка с параметром id в URL</a></li>
     <li><a href="#text">Ссылка на фрагмент текущей страницы</a></li>
 </ol>
@@ -70,16 +70,16 @@
     <label for="name">ФИО</label>
     <input type="text" name="ФИО" id="name">
     <label for="phone">Телефон</label>
-    <input type="text" id="phone">
+    <input type="text" id="phone" name="phone">
     <label for="birth">Дата рождения</label>
-    <input type="date" id="birth">
+    <input type="date" id="birth" name="birth">
     <span>Пол</span>
     <input type="radio" name="state" id="male" value="Мужской">
     <label for="male">Мужской</label>
     <input type="radio" name="state" id="female" value="Женский">
     <label for="female">Женский</label><br><br>
     <label for="lang">Любимый язык программирования</label>
-    <select name="" id="lang" multiple="multiple">
+    <select name="programming_language" id="lang" multiple="multiple">
         <option value="">C++</option>
         <option value="">Python</option>
         <option value="">TypeScript</option>
@@ -89,9 +89,9 @@
         <option value="">Dart</option>
     </select>
     <label for="biography">Биография</label>
-    <textarea name="" id="biography" cols="30" rows="10"></textarea>
+    <textarea name="bio" id="biography" cols="30" rows="10"></textarea>
     <label for="terms-argree">С контрактом ознакомлен</label>
-    <input type="checkbox" id="terms-argree">
+    <input type="checkbox" name="agree" id="terms-argree">
     <button type="submit">Сохранить</button>
 </form>
 </body>
