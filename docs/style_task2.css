@@ -11,6 +11,7 @@ body {
 header {
     width: 100%;
     background-color: #41B619;
+    margin-top: 2dvh;
 }
 header .header-content {
     width: 100%;
@@ -26,18 +27,19 @@ header .header-content img {
     height: 7dvh;
     border-radius: 100%;
 }
-header .header-content h1, .nav-link {
+header .header-content h1, .nav-link, p {
     color: #fff;
 }
 header .header-content .header-menu ul {
     list-style: none;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 header .header-content .header-menu ul li {
     margin: 1dvw;
 }
-header .header-content .header-menu ul li a {
+header .header-content .header-menu ul li a, p {
     text-decoration: none;
     font-size: 22px;
     transition: .4s ease-in-out;
@@ -52,6 +54,50 @@ header .header-content .header-menu ul li a:after {
 }
 header .header-content .header-menu ul li a:hover::after {
     background-color: #fff;
+}
+
+header .header-content #dropdown-menu-container {
+    background-color: #fff;
+    height: 10dvh;
+    padding: 1dvw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: color, background-color .3s;
+}
+header .header-content #dropdown-menu-container:hover {
+    background-color: #41B619;
+}
+header .header-content #dropdown-menu-container:hover p {
+    color: #fff;
+}
+header .header-content #dropdown-menu-container p {
+    color: #41B619;
+}
+header .header-content #dropdown-menu-container ul {
+    display: none;
+    position: absolute;
+    top: -100dvh;
+    background-color: #41B619;
+    text-align: center;
+    list-style: none;
+    transition: top .3s;
+    box-shadow: 0 4px 4px 0 rgba(0,0,0, 0.3);
+}
+header .header-content #dropdown-menu-container ul li {
+    padding: 1dvh 1dvw;
+}
+header .header-content #dropdown-menu-container ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+#menu {
+    transition: background-position .3s;
+}
+
+header .header-content #dropdown-menu-container ul li ul a {
+    color: #FFFFFF;
 }
 
 main {
@@ -124,9 +170,7 @@ form {
 form div {
     margin: 1dvh;
 }
-form label {
 
-}
 form div input {
     outline: none;
     border: none;
@@ -136,17 +180,66 @@ form div input {
     padding: 1dvh;
     margin-top: 1dvh;
 }
+form div input::placeholder {
+    color: #dbdbdb;
+}
 form .phone-birth-container {
     display: flex;
 }
 form .phone-birth-container input {
     height: 40px;
 }
+form .gender-container span {
+    display: block;
+}
+form .gender-container input {
+    width: 30px;
+    display: inline-block;
+}
+form .lang-container select {
+    margin-top: 1dvh;
+    display: block;
+}
+form .bio-container textarea {
+    display: block;
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border-radius: 10px;
+    padding: 1dvh 1dvw;
+    border: none;
+    margin-top: 1dvh;
+}
+form .terms-agree {
+    display: flex;
+    align-items: center;
+}
+form .terms-agree #terms-agree-input {
+    display: flex;
+    align-items: center;
+    width: 23px;
+    margin: 0 1dvw;
+}
+form button {
+    margin-left: 1dvw;
+    padding: 1dvh 1dvw;
+    background-color: #41B619;
+    border: 3px #41B619  solid;
+    border-radius: 10px;
+    color: #FFFFFF;
+    transition: .3s;
+}
+form button:hover {
+    background-color: #fff;
+    border: 3px #41B619 solid;
+    color: #41B619;
+}
 
 footer {
     background-color: #41B619;
     width: 100%;
     height: 40px;
+    margin-bottom: 2dvh;
 }
 footer .footer-container {
     width: 100%;
