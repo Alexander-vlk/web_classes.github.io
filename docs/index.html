@@ -39,6 +39,7 @@
                     <li><a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
                 </ul>
 
+<<<<<<< HEAD
                 <ul>
                     <li class="link__menu__item">
                         <p>Контекстная <a href="https://github.com/Alexander-vlk/web_classes" style="display: inline-block">ссылка</a> в тексте абзаца</p>
@@ -47,6 +48,22 @@
                         <a href="https://github.com/Alexander-vlk/web_classes#files">Ссылка на фрагмент стороннего сайта</a>
                     </li>
                 </ul>
+=======
+<ol>
+    <h1>Title</h1>
+    <li><a href="/pages/page" title="pages/page">Сокращенная ссылка на внутреннюю</a></li>
+    <li><a href="/" title="main">Сокращенная ссылка на главную</a></li>
+    <li><a href="http://github.com?parameter1=p1&arameter2=2&parameter3=p3" titile="threee parameters">Ссылка с тремя параметрами URL</a></li>
+    <li><a href="http://github.com?id=1003930" title="id">Ссылка с параметром id в URL</a></li>
+    <li><a href="#text" titile="fragment">Ссылка на фрагмент текущей страницы</a></li>
+</ol>
+<ul>
+    <li><a href="page">Относительная ссылка на страницу в текущем каталоге</a></li>
+    <li><a href="./about/page">Относительная ссылка на страницу в каталоге about</a></li>
+    <li><a href="../page">Относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+    <li><a href="../../page">Относительная ссылка на страницу в каталоге двумя уровнями выше текущего</a></li>
+</ul>
+>>>>>>> 4acc0eb0cba48202198f120b7a8b43298ac41e32
 
                 <ul>
                     <li>
@@ -63,6 +80,7 @@
                     <li><a href="ftp://user:228@2ch.hk/files.file.html">Ссылку на файл на сервере FTP с авторизацией</a></li>
                 </ul>
 
+<<<<<<< HEAD
             </div>
             <div class="main-table">
                 <table>
@@ -150,5 +168,66 @@
             <p>Александр Барменков, 2023 год</p>
         </div>
     </footer>
+=======
+<ul>
+    <li>
+        <p>Ссылки, прямоугольная и круглая область картинки</p>
+        <br>
+        <img src="image.jpg" width="200" height="200" alt="Картинка" usemap="#mymap">
+        <map name="mymap">
+            <area shape="rect" coords="0,0,200,100" href="https://kubsu.ru/" alt="Прямоугольная область">
+            <area shape="circle" coords="100,150,50" href="https://kubstu.ru/" alt="Круглая область">
+        </map>
+    </li>
+</ul>
+<ul>
+    <li>
+        <a href="">Ссылка с пустым href</a>
+    </li>
+    <li>
+        <a>Ссылка без href</a>
+    </li>
+    <li><a href="http://2ch.hk" rel="nofollow">Ссылка, по которой запрещен переход поисковикам</a></li>
+    <li><a href="https://github.com" rel="nofollow">
+        <!--noindex-->Ссылка, запрещенная для индексации поисковиками
+        <!--/noindex-->
+    </a></li>
+    <li><a href="ftp://user:228@2ch.hk/files.file.html">Ссылку на файл на сервере FTP с авторизацией</a></li>
+</ul>
+
+<p>
+    <a id="text"></a>
+    <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nulla provident quibusdam recusandae saepe sit voluptatem? Adipisci assumenda, debitis molestias odio quam quidem. Adipisci eos esse minus non qui unde?</span><span>Aliquam, deserunt distinctio eos ex exercitationem facilis illo impedit ipsam laborum, libero magnam nam nisi pariatur quam quidem rerum soluta veritatis! Cumque dolor excepturi nihil perferendis quod recusandae sint! Accusantium!</span><span>Accusamus ad adipisci dicta expedita harum impedit iusto maiores minima minus molestiae quam quibusdam ratione rem, sed tenetur totam vitae! A aliquam distinctio iste nobis odit rem. Aspernatur, debitis vero?</span><span>Aliquid beatae cum eos, ex fugiat, fugit harum laudantium odio pariatur quae similique sint sit suscipit, veritatis vitae. Alias aspernatur dicta dolorem illum in mollitia porro quia sapiente sit sunt.</span><span>Ad, aliquid at delectus eaque iste neque nihil nobis obcaecati omnis suscipit? A accusantium aliquam beatae cumque dicta, eum illum incidunt, molestias officia praesentium, provident quasi quia sapiente tempora voluptate.</span>
+</p>
+
+<form action="/" method="post" style="display: inherit">
+    <label for="name">ФИО</label>
+    <input type="text" name="ФИО" id="name">
+    <label for="phone">Телефон</label>
+    <input type="text" id="phone" name="phone">
+    <label for="birth">Дата рождения</label>
+    <input type="date" id="birth" name="birth">
+    <span>Пол</span>
+    <input type="radio" name="state" id="male" value="Мужской">
+    <label for="male">Мужской</label>
+    <input type="radio" name="state" id="female" value="Женский">
+    <label for="female">Женский</label><br><br>
+    <label for="lang">Любимый язык программирования</label>
+    <select name="lang[]" id="lang" multiple="multiple">
+        <option value="">C++</option>
+        <option value="">Python</option>
+        <option value="">TypeScript</option>
+        <option value="">Java</option>
+        <option value="">Assembly</option>
+        <option value="">Rust</option>
+        <option value="">Dart</option>
+    </select>
+    <label for="biography">Биография</label>
+    <textarea name="bio" id="biography" cols="30" rows="10"></textarea>
+    <label for="terms-argree">С контрактом ознакомлен</label>
+    <input type="checkbox" name="agree" id="terms-argree">
+    <button type="submit">Сохранить</button>
+</form>
+>>>>>>> 4acc0eb0cba48202198f120b7a8b43298ac41e32
 </body>
 </html>
