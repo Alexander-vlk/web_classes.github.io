@@ -75,7 +75,6 @@ header .header-content #dropdown-menu-container p {
     color: #41B619;
 }
 header .header-content #dropdown-menu-container ul {
-    display: none;
     position: absolute;
     top: -100dvh;
     background-color: #41B619;
@@ -83,6 +82,9 @@ header .header-content #dropdown-menu-container ul {
     list-style: none;
     transition: top .3s;
     box-shadow: 0 4px 4px 0 rgba(0,0,0, 0.3);
+}
+header .header-content #dropdown-menu-container:hover ul {
+    top: 12dvh;
 }
 header .header-content #dropdown-menu-container ul li {
     padding: 1dvh 1dvw;
