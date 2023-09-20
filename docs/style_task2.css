@@ -12,6 +12,17 @@ header {
     width: 100%;
     background-color: #41B619;
     margin-top: 2dvh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo-sitename-container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 20dvw;
+    display: flex;
+    align-items: center;
+    justify-content: left;
 }
 header .header-content {
     width: 100%;
@@ -22,7 +33,7 @@ header .header-content {
     justify-content: space-between;
     align-items: center;
 }
-header .header-content img {
+header .logo-sitename-container img {
     width: 7dvh;
     height: 7dvh;
     border-radius: 100%;
@@ -168,6 +179,7 @@ tr.row-odd {
 form {
     display: flex;
     max-width: 700px;
+    margin: 0 auto;
 }
 form div {
     margin: 1dvh;
@@ -246,7 +258,7 @@ footer {
 footer .footer-container {
     width: 100%;
     max-width: 980px;
-    margin: 4dvh auto 0;
+    margin: 4dvh 1dvw 0;
     height: 40px;
     display: flex;
     align-items: center;
