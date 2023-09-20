@@ -14,15 +14,19 @@ header {
     margin-top: 2dvh;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
 }
 .logo-sitename-container {
-    margin: 0 auto;
+    position: absolute;
+    margin: 0 1dvw;
     width: 100%;
     max-width: 20dvw;
     display: flex;
     align-items: center;
     justify-content: left;
+}
+.logo-sitename-container .logo {
+    margin: 0 1dvw;
 }
 header .header-content {
     width: 100%;
