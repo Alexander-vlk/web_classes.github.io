@@ -229,6 +229,12 @@ footer .footer-container p {
     header, main, table {
         margin-bottom: 3dvh;
     }
+    header {
+        height: 20dvh;
+    }
+    header .menu-container ul {
+        display: block;
+    }
     table {
         width: 100%;
         max-width: 200px;
