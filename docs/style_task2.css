@@ -244,6 +244,7 @@ footer .footer-container p {
     }
     header .menu-container {
         margin-top: 1.5dvh;
+        padding: 1dvh 0;
     }
     header .menu-container ul {
         justify-content: space-between;
