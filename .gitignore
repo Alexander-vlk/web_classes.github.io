@@ -1,5 +1,10 @@
 /1
 /2
 /3
+<<<<<<< HEAD
 .idea
 /node_modules
+=======
+/4
+.idea
+>>>>>>> ddd8c1c0cd6fdfea8f74e8279fed37c9dee0420b
